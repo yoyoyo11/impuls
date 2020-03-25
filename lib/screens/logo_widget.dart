@@ -8,7 +8,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:implulsnew/screens/login_widget.dart';
-import 'package:implulsnew/styles/klein_dark.dart';
 
 class LogoButtonWidget extends StatelessWidget {
   void onScreenShot202003Pressed(BuildContext context) => Navigator.push(

@@ -44,19 +44,10 @@ class AllSessionsPreSessionWidget extends SessionReviewWidget {
                 ),
                 H5(
                   child: Text(
-                    "Thresholds by Session",
+                    "Pain Levels by Session",
                     textAlign: TextAlign.left,
                     style: TextStyle(),
                   ),
-                ),
-              ],
-            ),
-            Row(
-              children: <Widget>[
-                Text(
-                  "Session",
-                  textAlign: TextAlign.left,
-                  style: TextStyle(),
                 ),
               ],
             ),
@@ -124,7 +115,7 @@ class AllSessionsPreSessionWidget extends SessionReviewWidget {
                             "assets/images/path-2020.png",
                           ),
                           Text(
-                            " Sensory Threshold",
+                            " Before",
                             textAlign: TextAlign.left,
                             style: TextStyle(),
                           ),
@@ -136,19 +127,7 @@ class AllSessionsPreSessionWidget extends SessionReviewWidget {
                             "assets/images/path-2022.png",
                           ),
                           Text(
-                            " Pain Tolerance",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: <Widget>[
-                          Image.asset(
-                            "assets/images/path-2021.png",
-                          ),
-                          Text(
-                            " Pain Threshold",
+                            " After",
                             textAlign: TextAlign.left,
                             style: TextStyle(),
                           ),
@@ -158,6 +137,14 @@ class AllSessionsPreSessionWidget extends SessionReviewWidget {
                   ),
                 ),
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                GraphBox(),
+                SizedBox.fromSize(),
+                GraphBox(),
+              ]
             ),
             Row(
               children: [

@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:implulsnew/screens/choose_patient_widget.dart';
 import 'package:implulsnew/screens/logo_widget.dart';
 import 'package:implulsnew/styles/h2.dart';
 import 'package:implulsnew/styles/h3.dart';
@@ -12,9 +11,6 @@ class FinalPainLevelWidget extends StatefulWidget {
 }
 
 class _FinalPainLevelWidgetState extends State<FinalPainLevelWidget> {
-
-  void onChoosePatientPressed(BuildContext context) => Navigator.push(
-      context, MaterialPageRoute(builder: (context) => ChoosePatientWidget()));
 
   void onLogOutPressed(BuildContext context) => Navigator.push(
       context, MaterialPageRoute(builder: (context) => LogoButtonWidget()));
@@ -65,20 +61,11 @@ class _FinalPainLevelWidgetState extends State<FinalPainLevelWidget> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   ButtonButton(
-                    onPressed: () =>
-                        this.onChoosePatientPressed(context),
-                    child: Text(
-                      "SUBMIT",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(),
-                    ),
-                  ),
-                  ButtonButton(
                     padding: EdgeInsets.all(0),
                     onPressed: () =>
                         this.onLogOutPressed(context),
                     child: Text(
-                      "LOG OUT",
+                      "SUBMIT AND LOG OUT",
                       textAlign: TextAlign.left,
                       style: TextStyle(),
                     ),

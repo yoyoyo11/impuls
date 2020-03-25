@@ -79,7 +79,7 @@ class StimulationWidget extends StatelessWidget {
               ],
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
                   width: 400,
@@ -189,7 +189,8 @@ class StimulationWidget extends StatelessWidget {
               ],
             ),
             Container(
-              width: 820,
+              width: 920,
+              height: 300,
               child: Card(
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
