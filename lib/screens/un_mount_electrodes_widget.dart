@@ -39,6 +39,7 @@ class UnMountElectrodesWidgetState extends State<UnMountElectrodesWidget> {
       children: <Widget>[
 //        Text(title),
         Checkbox(
+          activeColor: Color(0xffD97676),
           value: boolValue,
           onChanged: (bool value) {
             /// manage the state of each value

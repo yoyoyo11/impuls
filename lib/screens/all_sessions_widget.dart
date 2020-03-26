@@ -1,4 +1,4 @@
-//TODO make graphs
+//TODO make graphs and make up and down arroes work changing the session number
 
 
 import 'package:flutter/material.dart';
