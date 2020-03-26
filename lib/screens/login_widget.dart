@@ -1,3 +1,4 @@
+//TODO Connected to mysql server to authenticate
 /*
 *  login_widget.dart
 *  KleinKlein Wireframes

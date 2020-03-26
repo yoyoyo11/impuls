@@ -1,3 +1,19 @@
+//TODO The process here is:
+// Thresshold determination
+// Thresshold determination
+// Average
+// STIM 1
+// Thresshold determination
+// Thresshold determination
+// Average
+// STIM 2 (change the stim screen number from 1.2 to 1.2 to 2.1 to 2.2 and the Stim Finished button to indigo and back to this screen anfter 1.2 and 2 unplug after 2.2
+// Thresshold determination
+// The determinations(each time 3 mA values need to be stored in to Mysql and sent to the device for stimulation
+// When N/A is pressed it should change color to Color(0xffD97676), the sensitvity button to color: AppColors.primaryElement, the PAIN ONSET to Indigo and the mA value saved
+// When 0 is pressed it should change color to light green, the Pain Onset button to color: to indigo, and the mA value saved
+// When 1 is pressed it should change color to light red, the Tolerance Rating button to idiogo and the pain onset button to AppColors.primaryElement,and the mA value saved
+// When 10 is pressed it should change capture the value and leave the screed ti the next threshold screen or the threshold summary
+// As interim numbers are pressed the colors should go to light red and mA captured with the number.
 /*
 *  threshold_determination_widget.dart
 *  KleinKlein Wireframes
@@ -161,6 +177,7 @@ class _ThresholdDeterminationWidgetState
                 ),
               ),
               ButtonButton(
+                color: AppColors.primaryElement,
                 padding: EdgeInsets.all(0),
                 onPressed: () => this.onRatingSTPressed(context),
                 child: Text(

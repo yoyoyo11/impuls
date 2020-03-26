@@ -13,7 +13,7 @@ import 'package:implulsnew/styles/h2.dart';
 import 'package:implulsnew/styles/h3.dart';
 import 'package:implulsnew/styles/h4.dart';
 import 'package:implulsnew/screens/threshold_determination_widget.dart';
-import 'package:implulsnew/screens/unplug_electrodes_widget.dart';
+import 'package:implulsnew/screens/un_mount_electrodes_widget.dart';
 import 'package:implulsnew/values/values.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
@@ -29,11 +29,11 @@ class StimulationWidget extends StatelessWidget {
       context, MaterialPageRoute(builder: (context) => ChoosePatientWidget()));
 
   void onStimFinishedPressed(BuildContext context) => Navigator.push(context,
-      MaterialPageRoute(builder: (context) => UnplugElectrodesWidget()));
+      MaterialPageRoute(builder: (context) => UnMountElectrodesWidget()));
 
   final int instStimA = 1200;
   final int instIBI = 60;
-  final int stimNumber = 1;
+  final double stimNumber = 1.1;
 
   @override
   Widget build(BuildContext context) {

@@ -49,7 +49,7 @@ class _FinalPainLevelWidgetState extends State<FinalPainLevelWidget> {
                 max: 10,
                 divisions: 100,
                 activeColor: Colors.indigo,
-                inactiveColor: Colors.amber,
+                inactiveColor: Color(0xffD97676),
                 value: _rating,
                 onChanged: (newrating) {
                   setState(() => _rating = newrating);

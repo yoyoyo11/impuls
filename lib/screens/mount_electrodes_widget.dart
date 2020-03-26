@@ -12,25 +12,26 @@ import 'package:implulsnew/styles/h2.dart';
 import 'package:implulsnew/styles/h3.dart';
 import 'package:implulsnew/screens/threshold_determination_widget.dart';
 
-class SetUpElectrodesWidget extends StatefulWidget {
+class MountElectrodesWidget extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _SetUpElectrodesWidgetState();
+  State<StatefulWidget> createState() => MountElectrodesWidgetState();
 }
 
-class _SetUpElectrodesWidgetState extends State<SetUpElectrodesWidget> {
+class MountElectrodesWidgetState extends State<MountElectrodesWidget> {
   bool electrodesAttach = false;
   bool machineOn = false;
 
   /// box widget
   /// [title] is the name of the checkbox
   /// [boolValue] is the boolean value of the checkbox
-  Widget checkbox(String title, bool boolValue) {
+  Widget checkBox(String title, bool boolValue) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
 //        Text(title),
         Checkbox(
           value: boolValue,
+          activeColor: Color(0xffD97676),
           onChanged: (bool value) {
             /// manage the state of each value
             setState(() {
@@ -73,7 +74,7 @@ class _SetUpElectrodesWidgetState extends State<SetUpElectrodesWidget> {
                 ),
                 Row(
                   children: [
-                    checkbox("Att", electrodesAttach),
+                    checkBox("Att", electrodesAttach),
                     H3(
                       child: Text(
                         "   Attach Electrodes",
@@ -85,7 +86,7 @@ class _SetUpElectrodesWidgetState extends State<SetUpElectrodesWidget> {
                 ),
                 Row(
                   children: [
-                    checkbox("On", machineOn),
+                    checkBox("On", machineOn),
                     H3(
                       child: Text(
                         "   Turn on Machines",

@@ -1,3 +1,4 @@
+//TODO dates and existing patients need to be put into the List from mysql - for new sessions the streams need to be set up. double click to review a session or setup a new session
 /*
 *  choose_session_widget.dart
 *  KleinKlein Wireframes
@@ -52,10 +53,14 @@ class ChooseSessionWidget extends StatelessWidget {
                   child: InkWell(
                     onDoubleTap: () =>
                       this.onNewSessionTap(context),
-                    child: ListTile(
-                      leading: Text('DateTime.now()'),
-                      title: Text('NEW Session'),
-                      trailing: Icon(Icons.keyboard_arrow_right),
+                    child: Container(
+                      color: Color(0xffD97676).withOpacity(0.3),
+
+                      child: ListTile(
+                        leading: Text('DateTime.now()'),
+                        title: Text('NEW Session'),
+                        trailing: Icon(Icons.keyboard_arrow_right),
+                      ),
                     ),
                   ),
                 ),
@@ -84,6 +89,7 @@ class ChooseSessionWidget extends StatelessWidget {
 }
 
 Widget _myListView(BuildContext context) {
+  //TODO get details from mysql
   final sessions = [
     'Session 1',
     'Session 2',
@@ -116,6 +122,7 @@ Widget _myListView(BuildContext context) {
         child: InkWell(
           onTap: () {
             print('$sessions');
+            //TODO send to SessionReview with the session that was clicked - as a double cick betton
           },
           child: ListTile(
             leading: Text(dates[index]),

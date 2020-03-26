@@ -1,3 +1,4 @@
+//TODO Get patient list from mysql server, capture the patient which is clicked on, chnge color on hover to encourage choosing the patient
 /*
 *  choose_patient_widget.dart
 *  KleinKlein Wireframes

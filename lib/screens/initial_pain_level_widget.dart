@@ -20,7 +20,7 @@ class InitialPainLevelWidget extends StatefulWidget {
 class _InitialPainLevelWidgetState extends State<InitialPainLevelWidget> {
 
   void onButtonsContainedThreePressed(BuildContext context) => Navigator.push(
-      context, MaterialPageRoute(builder: (context) => SetUpElectrodesWidget()));
+      context, MaterialPageRoute(builder: (context) => MountElectrodesWidget()));
 
 
 static double _rating=1;
@@ -56,7 +56,7 @@ static double _rating=1;
                 max: 10,
                 divisions: 100,
                 activeColor: Colors.indigo,
-                inactiveColor: Colors.amber,
+                inactiveColor: Color(0xffD97676),
                 value: _rating,
                 onChanged: (newrating) {
                   setState(() => _rating = newrating);

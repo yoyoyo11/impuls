@@ -11,20 +11,30 @@ import 'package:implulsnew/screens/session_review_widget.dart';
 import 'package:implulsnew/styles/button.dart';
 import 'package:implulsnew/styles/h2.dart';
 import 'package:implulsnew/styles/h3.dart';
+import 'package:implulsnew/screens/mount_electrodes_widget.dart';
 
-class UnplugElectrodesWidget extends StatefulWidget {
+//class SetUpElectrodesWidget extends StatefulWidget {
+//  @override
+//  State<StatefulWidget> createState() => SetUpElectrodesWidgetState();
+//}
+//
+//class SetUpElectrodesWidgetState extends State<SetUpElectrodesWidget> {
+//  bool electrodesAttach = false;
+//  bool machineOn = false;
+
+
+class UnMountElectrodesWidget extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _UnplugElectrodesWidgetState();
+  State<StatefulWidget> createState() => UnMountElectrodesWidgetState();
 }
 
-class _UnplugElectrodesWidgetState extends State<UnplugElectrodesWidget> {
-  bool electrodesAttach = false;
-  bool machineOn = false;
+class UnMountElectrodesWidgetState extends State<UnMountElectrodesWidget> {
 
-  /// box widget
-  /// [title] is the name of the checkbox
-  /// [boolValue] is the boolean value of the checkbox
-  Widget checkbox(String title, bool boolValue) {
+
+//   box widget
+//   [title] is the name of the checkbox
+//   [boolValue] is the boolean value of the checkbox
+  Widget checkBox(String title, bool boolValue) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -53,6 +63,10 @@ class _UnplugElectrodesWidgetState extends State<UnplugElectrodesWidget> {
       context,
       MaterialPageRoute(builder: (context) => SessionReviewWidget()));
 
+bool electrodesAttach = false;
+bool machineOn = false;
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,7 +87,7 @@ class _UnplugElectrodesWidgetState extends State<UnplugElectrodesWidget> {
                 ),
                 Row(
                   children: [
-                    checkbox("Att", electrodesAttach),
+                    checkBox("Att", electrodesAttach),
                     H3(
                       child: Text(
                         "   Disconnect Electrodes",
@@ -85,7 +99,7 @@ class _UnplugElectrodesWidgetState extends State<UnplugElectrodesWidget> {
                 ),
                 Row(
                   children: [
-                    checkbox("On", machineOn),
+                    checkBox("On", machineOn),
                     H3(
                       child: Text(
                         "   Turn off Impuls",
