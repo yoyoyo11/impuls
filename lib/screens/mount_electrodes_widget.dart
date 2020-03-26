@@ -74,10 +74,10 @@ class MountElectrodesWidgetState extends State<MountElectrodesWidget> {
                 ),
                 Row(
                   children: [
-                    checkBox("Att", electrodesAttach),
+                    checkBox("On", machineOn),
                     H3(
                       child: Text(
-                        "   Attach Electrodes",
+                        "   Turn on Machines",
                         textAlign: TextAlign.left,
                         style: TextStyle(),
                       ),
@@ -86,10 +86,10 @@ class MountElectrodesWidgetState extends State<MountElectrodesWidget> {
                 ),
                 Row(
                   children: [
-                    checkBox("On", machineOn),
+                    checkBox("Att", electrodesAttach),
                     H3(
                       child: Text(
-                        "   Turn on Machines",
+                        "   Attach Electrodes",
                         textAlign: TextAlign.left,
                         style: TextStyle(),
                       ),

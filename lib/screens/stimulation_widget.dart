@@ -33,7 +33,7 @@ class StimulationWidget extends StatelessWidget {
 
   final int instStimA = 1200;
   final int instIBI = 60;
-  final double stimNumber = 1.1;
+  final int stimNumber = 1;
 
   @override
   Widget build(BuildContext context) {

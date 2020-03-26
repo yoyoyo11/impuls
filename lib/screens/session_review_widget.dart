@@ -8,7 +8,7 @@
 //TODO Make graphs and display data
 
 import 'package:flutter/material.dart';
-import 'package:implulsnew/screens/all_sessions_widget.dart';
+import 'package:implulsnew/screens/all_session_results_widget.dart';
 import 'package:implulsnew/screens/session_detail_widget.dart';
 import 'package:implulsnew/styles/button.dart';
 import 'package:implulsnew/styles/h4.dart';
