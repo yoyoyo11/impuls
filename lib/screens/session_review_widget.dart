@@ -47,19 +47,8 @@ class SessionReviewWidget extends StatelessWidget {
               ),
               SizedBox(height: 30),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Spacer(),
-                  ButtonButton(
-                    padding: EdgeInsets.all(0),
-                    onPressed: () => this.goToSession(context),
-                    child: Text(
-                      "SESSION $sessionNumber DETAIL",
-                      textAlign: TextAlign.left,
-                      style: TextStyle(),
-                    ),
-                  ),
-                  Spacer(),
                   ButtonButton(
                     padding: EdgeInsets.all(0),
                     onPressed: () => this
@@ -70,7 +59,6 @@ class SessionReviewWidget extends StatelessWidget {
                       style: TextStyle(),
                     ),
                   ),
-                  Spacer()
                 ],
               ),
             ],
