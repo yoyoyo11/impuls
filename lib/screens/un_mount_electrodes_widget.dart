@@ -11,7 +11,6 @@ import 'package:implulsnew/screens/session_review_widget.dart';
 import 'package:implulsnew/styles/button.dart';
 import 'package:implulsnew/styles/h2.dart';
 import 'package:implulsnew/styles/h3.dart';
-import 'package:implulsnew/screens/mount_electrodes_widget.dart';
 
 //class SetUpElectrodesWidget extends StatefulWidget {
 //  @override

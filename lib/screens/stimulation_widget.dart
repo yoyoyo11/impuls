@@ -21,7 +21,7 @@ class StimulationWidget extends StatelessWidget {
   void onStimStartPressed(BuildContext context) => Navigator.push(context,
       MaterialPageRoute(builder: (context) => ThresholdDeterminationWidget()));
 //
-// TODO 1.1 See 1
+// TODO 1.1 See 1 - ADD Streams and Graphs and make variables work.  Initially everything can be done locally on the device - get Bluetooth working.
 
   void onPausePressed(BuildContext context) {}
 
