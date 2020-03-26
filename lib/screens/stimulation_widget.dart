@@ -29,10 +29,10 @@ class StimulationWidget extends StatelessWidget {
       context, MaterialPageRoute(builder: (context) => ChoosePatientWidget()));
 
   void onStimFinishedPressed(BuildContext context) => Navigator.push(context,
-      MaterialPageRoute(builder: (context) => UnMountElectrodesWidget()));
+      MaterialPageRoute(builder: (context) => ThresholdDeterminationWidget()));
 
   final int instStimA = 1200;
-  final int instIBI = 60;
+  final int instIBI = 750;
   final int stimNumber = 1;
 
   @override
@@ -168,16 +168,15 @@ class StimulationWidget extends StatelessWidget {
                           color: AppColors.secondaryBackground,
                           padding: EdgeInsets.all(0),
                           onPressed: () => this.onStimFinishedPressed(context),
-                          //TODO 2 Turn button when stim is finshed
                           child: Text(
-                            "STIM FINISHED",
+                            "STIM FINISHED - GO TO RATING",
                             textAlign: TextAlign.left,
                             style: TextStyle(),
                           ),
                         ),
                         H4(
                           child: Text(
-                            "IBI: $instIBI b/m",
+                            "IBI: $instIBI mSec",
                             textAlign: TextAlign.left,
                             style: TextStyle(),
                           ),

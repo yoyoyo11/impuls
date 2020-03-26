@@ -1,6 +1,5 @@
 //TODO make graphs and make up and down arroes work changing the session number
 
-
 import 'package:flutter/material.dart';
 import 'package:implulsnew/screens/session_review_widget.dart';
 import 'package:implulsnew/styles/button.dart';
@@ -8,12 +7,18 @@ import 'package:implulsnew/styles/h3.dart';
 import 'package:implulsnew/styles/h5.dart';
 import 'package:implulsnew/screens/final_pain_level_widget.dart';
 
-class AllSessionsPreSessionWidget extends SessionReviewWidget {
-  void onChipsChoiceOutPressed(BuildContext context) => Navigator.push(
-      context, MaterialPageRoute(builder: (context) => SessionReviewWidget()));
-
+class AllSessionsResultsWidget extends StatelessWidget {
   void onEndSessionPressed(BuildContext context) => Navigator.push(
       context, MaterialPageRoute(builder: (context) => FinalPainLevelWidget()));
+
+  void onIconNavigationArrowDropUp24pxPressed(BuildContext context) {}
+
+  void onIconNavigationArrowDropDown24pxPressed(BuildContext context) {}
+
+  void goToSession(BuildContext context) => Navigator.push(
+      context, MaterialPageRoute(builder: (context) => SessionReviewWidget()));
+
+  final int sessionNumber = 4;
 
   @override
   Widget build(BuildContext context) {
@@ -142,13 +147,12 @@ class AllSessionsPreSessionWidget extends SessionReviewWidget {
               ],
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                GraphBox(),
-                SizedBox.fromSize(),
-                GraphBox(),
-              ]
-            ),
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  GraphBox(),
+                  SizedBox.fromSize(),
+                  GraphBox(),
+                ]),
             Row(
               children: [
                 Text(
@@ -163,8 +167,7 @@ class AllSessionsPreSessionWidget extends SessionReviewWidget {
               children: <Widget>[
                 ButtonButton(
                   padding: EdgeInsets.all(0),
-                  onPressed: () =>
-                      this.onEndSessionPressed(context),
+                  onPressed: () => this.onEndSessionPressed(context),
                   child: Text(
                     "SESSION END",
                     textAlign: TextAlign.left,
@@ -176,6 +179,47 @@ class AllSessionsPreSessionWidget extends SessionReviewWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Row buildSessionControl(BuildContext context) {
+    return Row(
+      children: [
+        FlatButton(
+          onPressed: () => this.onIconNavigationArrowDropUp24pxPressed(context),
+          color: Color.fromARGB(0, 0, 0, 0),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(0)),
+          ),
+          textColor: Color.fromARGB(255, 0, 0, 0),
+          padding: EdgeInsets.all(0),
+          child: Image.asset(
+            "assets/images/icon-navigation-arrow-drop-up-24px.png",
+          ),
+        ),
+        ButtonButton(
+          padding: EdgeInsets.all(0),
+          onPressed: () => this.goToSession(context),
+          child: Text(
+            "SESSION $sessionNumber REVIEW",
+            textAlign: TextAlign.left,
+            style: TextStyle(),
+          ),
+        ),
+        FlatButton(
+          onPressed: () =>
+              this.onIconNavigationArrowDropDown24pxPressed(context),
+          color: Color.fromARGB(0, 0, 0, 0),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(0)),
+          ),
+          textColor: Color.fromARGB(255, 0, 0, 0),
+          padding: EdgeInsets.all(0),
+          child: Image.asset(
+            "assets/images/icon-navigation-arrow-drop-down-24px.png",
+          ),
+        ),
+      ],
     );
   }
 }

@@ -1,19 +1,23 @@
 //TODO The stimulation process is:
-// Thresshold determination
-// Thresshold determination
-// Average
-// STIM 1 (66 automatic stimuli at pain free. 50% and 75% of the tolerance threshold - just the 3 vaues gets passed in and the device does the rest
-// Threshold determination
-// Threshold determination
-// Average
-// STIM 2 same as 1 (change the stim screen number from 1 to 2 and the Stim Finished button to indigo and back to this screen anfter 1 and 2 unplug after 2
-// Thresshold determination
+// 1. Thresshold determination (rating)
+// 2. Thresshold determination - If over 5000, use only one rating instead of two
+// 3. Threshold Summary - Average of 1 and 2 (background), to stimulation screen
+// 4. STIM 1 (66 automatic stimuli at pain free. 50% and 75% of the tolerance threshold - just the 3 vaues gets passed in and the device does the rest - back to threshold screen
+// 5. Threshold determination
+// 6. Threshold determination
+// 7. Threshold Summary - Average of 1 and 2 (background), to stimulation screen
+// 8. STIM 2 same as 1 (change the stim screen number from 1 to 2 and the Stim Finished button to indigo and back to this screen anfter 1 and 2 unplug after 2
+// 9. Threshold determination
+// 10. Threshold determination
+// 11. Threshold Summary - To session review screen (keep off until 1-9 are done
 // The determinations(each time 3 mA values need to be stored in to Mysql and sent to the device for stimulation
 // When 0 is pressed it should change the 0 color to Color(0xffD97676), the sensory button to color: AppColors.primaryElement, the PAIN ONSET to Indigo and the mA value saved
 // When 1 is pressed it should change 1 color to light green, the Pain Onset button to color: to indigo, and the mA value saved
 // When the other numbers are pressed it should change color to light green, the Tolerance Rating button to idiogo and the pain onset button to AppColors.primaryElement,and the mA value saved
 // When 10 is pressed it should flash red change capture the value and leave the screed ti the next threshold screen or the threshold summary
 // As interim numbers are pressed (based upon patient response) the colors should go to light red and stim mA captured with the number.
+// After the number 0 is pressed, the stim button should be turn off untill a number is pressed.  A number can be pressed more than once, but all smaller numbers should be unpressble one a larger umber is pressed.
+// The stim mA goes up by 200 mA every time that the stim button is pressed.
 /*
 *  threshold_determination_widget.dart
 *  KleinKlein Wireframes

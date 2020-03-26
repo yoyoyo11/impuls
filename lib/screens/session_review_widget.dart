@@ -5,7 +5,8 @@
 *  Created by marc.
 *  Copyright © 2018 Uni-Marburg. All rights reserved.
     */
-//TODO Make graphs and display data
+//TODO Make graphs and display data.  Threshold data from the the rating (threshold determination) screens, BRS data comes from Finapres.
+//TODO Arrows need to change session number and button navigation, Arrows greay out id there are no session to change to.  It should also change from 'session detail' to 'session review' if not the current session
 
 import 'package:flutter/material.dart';
 import 'package:implulsnew/screens/all_session_results_widget.dart';
@@ -14,17 +15,13 @@ import 'package:implulsnew/styles/button.dart';
 import 'package:implulsnew/styles/h4.dart';
 
 class SessionReviewWidget extends StatelessWidget {
-  void onIconNavigationArrowDropUp24pxPressed(BuildContext context) {}
-
-  void onIconNavigationArrowDropDown24pxPressed(BuildContext context) {}
-
   void goToSession(BuildContext context) {}
 
   void onButton3BackContainedATextLightCopyPressed(BuildContext context) =>
       Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => AllSessionsPreSessionWidget()));
+              builder: (context) => AllSessionsResultsWidget()));
 
   void onThresholdGraphLongPressed(BuildContext context) => Navigator.push(
       context, MaterialPageRoute(builder: (context) => SessionDetailWidget()));
@@ -43,7 +40,7 @@ class SessionReviewWidget extends StatelessWidget {
             children: <Widget>[
               H4(
                 child: Text(
-                  "SESSION  OUTCOME",
+                  "SESSION $sessionNumber REVIEW",
                   textAlign: TextAlign.left,
                   style: TextStyle(),
                 ),
@@ -53,12 +50,20 @@ class SessionReviewWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Spacer(),
-                  buildSessionControl(context),
+                  ButtonButton(
+                    padding: EdgeInsets.all(0),
+                    onPressed: () => this.goToSession(context),
+                    child: Text(
+                      "SESSION $sessionNumber DETAIL",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(),
+                    ),
+                  ),
                   Spacer(),
                   ButtonButton(
                     padding: EdgeInsets.all(0),
-                    onPressed: () =>
-                        this.onButton3BackContainedATextLightCopyPressed(context),
+                    onPressed: () => this
+                        .onButton3BackContainedATextLightCopyPressed(context),
                     child: Text(
                       "ALL SESSIONS",
                       textAlign: TextAlign.left,
@@ -90,7 +95,7 @@ class SessionReviewWidget extends StatelessWidget {
                     child: FractionallySizedBox(widthFactor: 0.2),
                   ),
                   Text(
-                    "Pain Levels",
+                    "BRS",
                     textAlign: TextAlign.left,
                     style: TextStyle(
                       color: Color.fromARGB(222, 0, 0, 0),
@@ -120,7 +125,8 @@ class SessionReviewWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   InkWell(
-                    onDoubleTap: () => this.onThresholdGraphLongPressed(context),
+                    onDoubleTap: () =>
+                        this.onThresholdGraphLongPressed(context),
                     child: GraphBox(),
                   ),
                   graphBox(),
@@ -161,66 +167,25 @@ class SessionReviewWidget extends StatelessWidget {
 
   Container graphBox() {
     return Container(
-                  height: 450,
-                  width: 350,
-                  margin: EdgeInsets.only(left: 2),
-                  decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 216, 216, 216),
-                    border: Border.all(
-                      width: 1,
-                      color: Color.fromARGB(255, 151, 151, 151),
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color.fromARGB(255, 0, 0, 0),
-                        offset: Offset(2, 2),
-                        blurRadius: 2,
-                      ),
-                    ],
-                    borderRadius: BorderRadius.all(Radius.circular(6)),
-                  ),
-                  child: Container(),
-                );
-  }
-
-  Row buildSessionControl(BuildContext context) {
-    return Row(
-      children: [
-        FlatButton(
-          onPressed: () => this.onIconNavigationArrowDropUp24pxPressed(context),
-          color: Color.fromARGB(0, 0, 0, 0),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(0)),
-          ),
-          textColor: Color.fromARGB(255, 0, 0, 0),
-          padding: EdgeInsets.all(0),
-          child: Image.asset(
-            "assets/images/icon-navigation-arrow-drop-up-24px.png",
-          ),
+      height: 450,
+      width: 350,
+      margin: EdgeInsets.only(left: 2),
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 216, 216, 216),
+        border: Border.all(
+          width: 1,
+          color: Color.fromARGB(255, 151, 151, 151),
         ),
-        ButtonButton(
-          padding: EdgeInsets.all(0),
-          onPressed: () => this.goToSession(context),
-          child: Text(
-            "SESSION $sessionNumber DETAIL",
-            textAlign: TextAlign.left,
-            style: TextStyle(),
+        boxShadow: [
+          BoxShadow(
+            color: Color.fromARGB(255, 0, 0, 0),
+            offset: Offset(2, 2),
+            blurRadius: 2,
           ),
-        ),
-        FlatButton(
-          onPressed: () =>
-              this.onIconNavigationArrowDropDown24pxPressed(context),
-          color: Color.fromARGB(0, 0, 0, 0),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(0)),
-          ),
-          textColor: Color.fromARGB(255, 0, 0, 0),
-          padding: EdgeInsets.all(0),
-          child: Image.asset(
-            "assets/images/icon-navigation-arrow-drop-down-24px.png",
-          ),
-        ),
-      ],
+        ],
+        borderRadius: BorderRadius.all(Radius.circular(6)),
+      ),
+      child: Container(),
     );
   }
 }

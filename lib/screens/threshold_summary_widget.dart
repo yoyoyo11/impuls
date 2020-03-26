@@ -7,6 +7,7 @@
     */
 
 import 'package:flutter/material.dart';
+import 'package:implulsnew/screens/session_review_widget.dart';
 import 'package:implulsnew/screens/stimulation_widget.dart';
 import 'package:implulsnew/styles/button.dart';
 import 'package:implulsnew/styles/h2.dart';
@@ -15,6 +16,12 @@ import 'package:implulsnew/styles/h4.dart';
 class ThresholdSummaryWidget extends StatelessWidget {
   void onButtonsContainedPressed(BuildContext context) => Navigator.push(
       context, MaterialPageRoute(builder: (context) => StimulationWidget()));
+
+  void forDevPressed(BuildContext context) => Navigator.push(
+      context, MaterialPageRoute(builder: (context) => SessionReviewWidget()));
+
+  //TODO If Both stimulations are finished go to SessionReviewWidget, change button title accordingly
+  //TODO Control progress bar by counting the stimuli from the device up to 66
 
   final int sensitivty = 400;
   final int painOnset = 1200;
@@ -66,15 +73,26 @@ class ThresholdSummaryWidget extends StatelessWidget {
               ),
             ),
           ),
-          Center(
-            child: ButtonButton(
-              onPressed: () => this.onButtonsContainedPressed(context),
-              child: Text(
-                "BEGIN STIMULATION",
-                textAlign: TextAlign.center,
-                style: TextStyle(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              ButtonButton(
+                onPressed: () => this.onButtonsContainedPressed(context),
+                child: Text(
+                  "BEGIN STIMULATION",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(),
+                ),
               ),
-            ),
+              ButtonButton(
+                onPressed: () => this.forDevPressed(context),
+                child: Text(
+                  "for dev to session review",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(),
+                ),
+              ),
+            ],
           ),
         ],
       ),
