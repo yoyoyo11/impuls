@@ -29,55 +29,52 @@ static double _rating=1;
   Widget build(BuildContext context) {
     return  Scaffold(
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.only(left: 200, right: 200),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Spacer(),
-              H2(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Spacer(),
+            H2(
+              child: Text(
+                "Initial Pain Level",
+                textAlign: TextAlign.left,
+                style: TextStyle(),
+              ),
+            ),
+            H3(
+              child: Text(
+                "Rate from 0-10",
+                textAlign: TextAlign.left,
+                style: TextStyle(),
+              ),
+            ),
+            Spacer(),
+            Slider(
+              min: 0,
+              max: 10,
+              divisions: 100,
+              activeColor: Colors.indigo,
+              inactiveColor: Color(0xffD97676),
+              value: _rating,
+              onChanged: (newrating) {
+                setState(() => _rating = newrating);
+              },
+              label: "$_rating",
+            ),
+            Spacer(),
+            Center(
+              child: ButtonButton(
+                onPressed: () =>
+                    this.onButtonsContainedThreePressed(context),
                 child: Text(
-                  "Initial Pain Level",
-                  textAlign: TextAlign.left,
+                  "SUBMIT",
+                  textAlign: TextAlign.center,
                   style: TextStyle(),
                 ),
               ),
-              H3(
-                child: Text(
-                  "Rate from 0-10",
-                  textAlign: TextAlign.left,
-                  style: TextStyle(),
-                ),
-              ),
-              Spacer(),
-              Slider(
-                min: 0,
-                max: 10,
-                divisions: 100,
-                activeColor: Colors.indigo,
-                inactiveColor: Color(0xffD97676),
-                value: _rating,
-                onChanged: (newrating) {
-                  setState(() => _rating = newrating);
-                },
-                label: "$_rating",
-              ),
-              Spacer(),
-              Center(
-                child: ButtonButton(
-                  onPressed: () =>
-                      this.onButtonsContainedThreePressed(context),
-                  child: Text(
-                    "SUBMIT",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(),
-                  ),
-                ),
-              ),
-              Spacer(),
-            ],
-          ),
+            ),
+            Spacer(),
+          ],
         ),
       ),
     );
