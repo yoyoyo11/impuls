@@ -65,7 +65,7 @@ class _JensPageState extends State<JensPage> {
               Expanded(
                 child: Column(
                   children: <Widget>[
-                    Text(device.name == 'SET' ? '(unknown device)' : device.name + device.id.toString()),
+                    Text(device.name == 'SET' ? '(unknown device)' : device.name + device.id.toString() + 'mm'),
 //                    Text(device.id.toString()),
                   ],
                 ),
@@ -220,7 +220,7 @@ class _JensPageState extends State<JensPage> {
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    Text(characteristic.uuid.toString(),
+                    Text("mm" + characteristic.uuid.toString(),
                         style: TextStyle(fontWeight: FontWeight.bold)),
                   ],
                 ),
@@ -268,7 +268,7 @@ class _JensPageState extends State<JensPage> {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: Text(widget.title),
+//      title: Text(widget.title),
     ),
     body: _buildView(),
   );
