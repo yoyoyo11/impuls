@@ -22,6 +22,7 @@ if (flutterVersionName == null) {
 }
 
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
@@ -32,8 +33,8 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.company_name.implulsnew"
-        minSdkVersion 16
+        applicationId "de.unimarburg.impuls10"
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
