@@ -1,4 +1,0 @@
-#Wed Apr 15 17:54:07 CEST 2020
-base.0=/Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/app/intermediates/dex/release/shrunkDex/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

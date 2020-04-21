@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "/Users/elsie/Development/projects/impuls-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/marcmathys/.gradle/caches/transforms-2/files-2.1/6f7cefa0ba076405306fc600642b1626/appcompat-1.0.0/res/values-port/values-port.xml",
+                    "source": "/Users/elsie/.gradle/caches/transforms-2/files-2.1/6f7cefa0ba076405306fc600642b1626/appcompat-1.0.0/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

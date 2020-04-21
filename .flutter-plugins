@@ -1,10 +1,10 @@
 # This is a generated file; do not edit or check into version control.
-cloud_firestore=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.13.5/
-cloud_firestore_web=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-0.1.1+2/
-firebase_auth=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.16.0/
-firebase_auth_web=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-0.1.2/
-firebase_core=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.4+3/
-firebase_core_web=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2/
-flutter_blue=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/flutter_blue-0.7.1+1/
-google_sign_in=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/google_sign_in-4.4.1/
-google_sign_in_web=/Users/marcmathys/.pub-cache/hosted/pub.dartlang.org/google_sign_in_web-0.8.4/
+cloud_firestore=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.13.5/
+cloud_firestore_web=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-0.1.1+2/
+firebase_auth=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.16.0/
+firebase_auth_web=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-0.1.2/
+firebase_core=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.4+3/
+firebase_core_web=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2/
+flutter_blue=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blue-0.7.2/
+google_sign_in=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-4.4.1/
+google_sign_in_web=/Users/elsie/Development/tools/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_web-0.8.4/

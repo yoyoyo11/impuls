@@ -12,21 +12,21 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/Users/elsie/Development/projects/impuls-app/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/elsie/Development/projects/impuls-app/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.BLUETOOTH" />
-15-->[:flutter_blue] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
-15-->[:flutter_blue] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-65
+15-->[:flutter_blue] /Users/elsie/Development/projects/impuls-app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
+15-->[:flutter_blue] /Users/elsie/Development/projects/impuls-app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-65
 16    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-16-->[:flutter_blue] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
-16-->[:flutter_blue] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-71
+16-->[:flutter_blue] /Users/elsie/Development/projects/impuls-app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
+16-->[:flutter_blue] /Users/elsie/Development/projects/impuls-app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-71
 17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-17-->[:flutter_blue] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
-17-->[:flutter_blue] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+17-->[:flutter_blue] /Users/elsie/Development/projects/impuls-app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+17-->[:flutter_blue] /Users/elsie/Development/projects/impuls-app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
 18    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->[com.google.firebase:firebase-firestore:21.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
-19-->[com.google.firebase:firebase-firestore:21.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:13:22-76
+19-->[com.google.firebase:firebase-firestore:21.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
+19-->[com.google.firebase:firebase-firestore:21.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:13:22-76
 20    <!--
 21 io.flutter.app.FlutterApplication is an android.app.Application that
 22         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -35,30 +35,30 @@
 25         FlutterApplication and put your custom class here.
 26    -->
 27    <application
-27-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:9:5-32:19
+27-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:9:5-32:19
 28        android:name="io.flutter.app.FlutterApplication"
-28-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:10:9-57
+28-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:10:9-57
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.1.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/d8e6145ebd5f6e1099b739484795a4bd/core-1.1.0/AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.1.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/d8e6145ebd5f6e1099b739484795a4bd/core-1.1.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:12:9-43
+31-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:12:9-43
 32        android:label="KleinKlein Wireframes" >
-32-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:11:9-46
+32-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:11:9-46
 33        <activity
-33-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:13:9-31:20
+33-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:13:9-31:20
 34            android:name="com.company_name.implulsnew.MainActivity"
-34-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:14:13-41
+34-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:14:13-41
 35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-35-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:17:13-144
+35-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:17:13-144
 36            android:hardwareAccelerated="true"
-36-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:18:13-47
+36-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:18:13-47
 37            android:launchMode="singleTop"
-37-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:15:13-43
+37-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:15:13-43
 38            android:theme="@style/LaunchTheme"
-38-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:16:13-47
+38-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:16:13-47
 39            android:windowSoftInputMode="adjustResize" >
-39-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:19:13-55
+39-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:19:13-55
 40
 41            <!--
 42                 This keeps the window background of the activity showing
@@ -67,127 +67,127 @@
 45                 defined in @style/LaunchTheme).
 46            -->
 47            <meta-data
-47-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:24:13-26:40
+47-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:24:13-26:40
 48                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
-48-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:25:17-82
+48-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:25:17-82
 49                android:value="true" />
-49-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:26:17-37
+49-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:26:17-37
 50
 51            <intent-filter>
-51-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:27:13-30:29
+51-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:27:13-30:29
 52                <action android:name="android.intent.action.MAIN" />
-52-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:28:17-68
-52-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:28:25-66
+52-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:28:17-68
+52-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:28:25-66
 53
 54                <category android:name="android.intent.category.LAUNCHER" />
-54-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:29:17-76
-54-->/Users/marcmathys/AndroidStudioProjects/implulsnew 2/android/app/src/main/AndroidManifest.xml:29:27-74
+54-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:29:17-76
+54-->/Users/elsie/Development/projects/impuls-app/android/app/src/main/AndroidManifest.xml:29:27-74
 55            </intent-filter>
 56        </activity>
 57
 58        <service
-58-->[:firebase_auth] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+58-->[:firebase_auth] /Users/elsie/Development/projects/impuls-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 59            android:name="com.google.firebase.components.ComponentDiscoveryService"
-59-->[:firebase_auth] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+59-->[:firebase_auth] /Users/elsie/Development/projects/impuls-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 60            android:directBootAware="true"
-60-->[com.google.firebase:firebase-common:19.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+60-->[com.google.firebase:firebase-common:19.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:34:13-43
 61            android:exported="false" >
-61-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+61-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
 62            <meta-data
-62-->[:firebase_auth] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+62-->[:firebase_auth] /Users/elsie/Development/projects/impuls-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 63                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-63-->[:firebase_auth] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+63-->[:firebase_auth] /Users/elsie/Development/projects/impuls-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
 64                android:value="com.google.firebase.components.ComponentRegistrar" />
-64-->[:firebase_auth] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+64-->[:firebase_auth] /Users/elsie/Development/projects/impuls-app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 65            <meta-data
-65-->[:cloud_firestore] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+65-->[:cloud_firestore] /Users/elsie/Development/projects/impuls-app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 66                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
-66-->[:cloud_firestore] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
+66-->[:cloud_firestore] /Users/elsie/Development/projects/impuls-app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
 67                android:value="com.google.firebase.components.ComponentRegistrar" />
-67-->[:cloud_firestore] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+67-->[:cloud_firestore] /Users/elsie/Development/projects/impuls-app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 68            <meta-data
-68-->[:firebase_core] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+68-->[:firebase_core] /Users/elsie/Development/projects/impuls-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 69                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-69-->[:firebase_core] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+69-->[:firebase_core] /Users/elsie/Development/projects/impuls-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
 70                android:value="com.google.firebase.components.ComponentRegistrar" />
-70-->[:firebase_core] /Users/marcmathys/AndroidStudioProjects/implulsnew 2/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+70-->[:firebase_core] /Users/elsie/Development/projects/impuls-app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 71            <meta-data
-71-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+71-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
 72                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-72-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+72-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
 73                android:value="com.google.firebase.components.ComponentRegistrar" />
-73-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+73-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
 74            <meta-data
-74-->[com.google.firebase:firebase-firestore:21.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:20:13-22:85
+74-->[com.google.firebase:firebase-firestore:21.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:20:13-22:85
 75                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-75-->[com.google.firebase:firebase-firestore:21.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
+75-->[com.google.firebase:firebase-firestore:21.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
 76                android:value="com.google.firebase.components.ComponentRegistrar" />
-76-->[com.google.firebase:firebase-firestore:21.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
+76-->[com.google.firebase:firebase-firestore:21.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8556b728fa3ccaae3e63a368ace91c53/firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
 77        </service>
 78
 79        <activity
-79-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+79-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
 80            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-80-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+80-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
 81            android:excludeFromRecents="true"
-81-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+81-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
 82            android:exported="true"
-82-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+82-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
 83            android:launchMode="singleTask"
-83-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+83-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
 84            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-84-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+84-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
 85            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-85-->[com.google.firebase:firebase-auth:19.2.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+85-->[com.google.firebase:firebase-auth:19.2.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/b0d687bba8e5181aa65826f13ef1c781/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
 86        <activity
-86-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+86-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
 87            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-87-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+87-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
 88            android:excludeFromRecents="true"
-88-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+88-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
 89            android:exported="false"
-89-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+89-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
 90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-90-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+90-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
 91        <!--
 92            Service handling Google Sign-In user revocation. For apps that do not integrate with
 93            Google Sign-In, this service will never be started.
 94        -->
 95        <service
-95-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+95-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
 96            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-96-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+96-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
 97            android:exported="true"
-97-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+97-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
 98            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-98-->[com.google.android.gms:play-services-auth:16.0.1] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+98-->[com.google.android.gms:play-services-auth:16.0.1] /Users/elsie/.gradle/caches/transforms-2/files-2.1/2ee86b07a7a1a1743d2b0914980b0c57/play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
 99
 100        <provider
-100-->[com.google.firebase:firebase-common:19.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+100-->[com.google.firebase:firebase-common:19.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
 101            android:name="com.google.firebase.provider.FirebaseInitProvider"
-101-->[com.google.firebase:firebase-common:19.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+101-->[com.google.firebase:firebase-common:19.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:27:13-77
 102            android:authorities="de.unimarburg.impuls10.firebaseinitprovider"
-102-->[com.google.firebase:firebase-common:19.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+102-->[com.google.firebase:firebase-common:19.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:28:13-72
 103            android:exported="false"
-103-->[com.google.firebase:firebase-common:19.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+103-->[com.google.firebase:firebase-common:19.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:29:13-37
 104            android:initOrder="100" />
-104-->[com.google.firebase:firebase-common:19.3.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+104-->[com.google.firebase:firebase-common:19.3.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/89e8c50f4adcfa71f0d90282494b2c06/firebase-common-19.3.0/AndroidManifest.xml:30:13-36
 105
 106        <activity
-106-->[com.google.android.gms:play-services-base:17.1.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8d306c96d5671c46c09e41df093ec68f/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+106-->[com.google.android.gms:play-services-base:17.1.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8d306c96d5671c46c09e41df093ec68f/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
 107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-107-->[com.google.android.gms:play-services-base:17.1.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8d306c96d5671c46c09e41df093ec68f/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+107-->[com.google.android.gms:play-services-base:17.1.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8d306c96d5671c46c09e41df093ec68f/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
 108            android:exported="false"
-108-->[com.google.android.gms:play-services-base:17.1.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8d306c96d5671c46c09e41df093ec68f/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+108-->[com.google.android.gms:play-services-base:17.1.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8d306c96d5671c46c09e41df093ec68f/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
 109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-109-->[com.google.android.gms:play-services-base:17.1.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/8d306c96d5671c46c09e41df093ec68f/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+109-->[com.google.android.gms:play-services-base:17.1.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/8d306c96d5671c46c09e41df093ec68f/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 110
 111        <meta-data
-111-->[com.google.android.gms:play-services-basement:17.0.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/f2c8b4624d1269ee053bd8db8444a9c2/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+111-->[com.google.android.gms:play-services-basement:17.0.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/f2c8b4624d1269ee053bd8db8444a9c2/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 112            android:name="com.google.android.gms.version"
-112-->[com.google.android.gms:play-services-basement:17.0.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/f2c8b4624d1269ee053bd8db8444a9c2/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+112-->[com.google.android.gms:play-services-basement:17.0.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/f2c8b4624d1269ee053bd8db8444a9c2/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 113            android:value="@integer/google_play_services_version" />
-113-->[com.google.android.gms:play-services-basement:17.0.0] /Users/marcmathys/.gradle/caches/transforms-2/files-2.1/f2c8b4624d1269ee053bd8db8444a9c2/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+113-->[com.google.android.gms:play-services-basement:17.0.0] /Users/elsie/.gradle/caches/transforms-2/files-2.1/f2c8b4624d1269ee053bd8db8444a9c2/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 114    </application>
 115
 116</manifest>

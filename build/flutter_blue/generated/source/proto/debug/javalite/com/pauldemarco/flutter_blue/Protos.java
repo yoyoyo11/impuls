@@ -2054,6 +2054,11 @@ public final class Protos {
      */
     com.google.protobuf.ByteString
         getServiceUuidsBytes(int index);
+
+    /**
+     * <code>optional bool allow_duplicates = 3;</code>
+     */
+    boolean getAllowDuplicates();
   }
   /**
    * Protobuf type {@code ScanSettings}
@@ -2174,6 +2179,29 @@ public final class Protos {
       serviceUuids_.add(value.toStringUtf8());
     }
 
+    public static final int ALLOW_DUPLICATES_FIELD_NUMBER = 3;
+    private boolean allowDuplicates_;
+    /**
+     * <code>optional bool allow_duplicates = 3;</code>
+     */
+    public boolean getAllowDuplicates() {
+      return allowDuplicates_;
+    }
+    /**
+     * <code>optional bool allow_duplicates = 3;</code>
+     */
+    private void setAllowDuplicates(boolean value) {
+      
+      allowDuplicates_ = value;
+    }
+    /**
+     * <code>optional bool allow_duplicates = 3;</code>
+     */
+    private void clearAllowDuplicates() {
+      
+      allowDuplicates_ = false;
+    }
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (androidScanMode_ != 0) {
@@ -2181,6 +2209,9 @@ public final class Protos {
       }
       for (int i = 0; i < serviceUuids_.size(); i++) {
         output.writeString(2, serviceUuids_.get(i));
+      }
+      if (allowDuplicates_ != false) {
+        output.writeBool(3, allowDuplicates_);
       }
     }
 
@@ -2201,6 +2232,10 @@ public final class Protos {
         }
         size += dataSize;
         size += 1 * getServiceUuidsList().size();
+      }
+      if (allowDuplicates_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, allowDuplicates_);
       }
       memoizedSerializedSize = size;
       return size;
@@ -2383,6 +2418,29 @@ public final class Protos {
         return this;
       }
 
+      /**
+       * <code>optional bool allow_duplicates = 3;</code>
+       */
+      public boolean getAllowDuplicates() {
+        return instance.getAllowDuplicates();
+      }
+      /**
+       * <code>optional bool allow_duplicates = 3;</code>
+       */
+      public Builder setAllowDuplicates(boolean value) {
+        copyOnWrite();
+        instance.setAllowDuplicates(value);
+        return this;
+      }
+      /**
+       * <code>optional bool allow_duplicates = 3;</code>
+       */
+      public Builder clearAllowDuplicates() {
+        copyOnWrite();
+        instance.clearAllowDuplicates();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:ScanSettings)
     }
     protected final Object dynamicMethod(
@@ -2408,6 +2466,8 @@ public final class Protos {
           androidScanMode_ = visitor.visitInt(androidScanMode_ != 0, androidScanMode_,
               other.androidScanMode_ != 0, other.androidScanMode_);
           serviceUuids_= visitor.visitList(serviceUuids_, other.serviceUuids_);
+          allowDuplicates_ = visitor.visitBoolean(allowDuplicates_ != false, allowDuplicates_,
+              other.allowDuplicates_ != false, other.allowDuplicates_);
           if (visitor == com.google.protobuf.GeneratedMessageLite.MergeFromVisitor
               .INSTANCE) {
             bitField0_ |= other.bitField0_;
@@ -2445,6 +2505,11 @@ public final class Protos {
                         com.google.protobuf.GeneratedMessageLite.mutableCopy(serviceUuids_);
                   }
                   serviceUuids_.add(s);
+                  break;
+                }
+                case 24: {
+
+                  allowDuplicates_ = input.readBool();
                   break;
                 }
               }
