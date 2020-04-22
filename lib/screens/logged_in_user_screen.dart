@@ -58,7 +58,7 @@ class UserInfoPage extends StatelessWidget {
               padding: EdgeInsets.all(30),
               onPressed: () => this.onButtonsConnectPressed(context),
               child: Text(
-                "Lets get the device conncted",
+                "Lets get the device connected",
                 textAlign: TextAlign.left,
                 style: TextStyle(),
               ),
