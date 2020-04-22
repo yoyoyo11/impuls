@@ -34,7 +34,6 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     //final database = Provider.of<FirestoreDatabaseService>(context);
-    print('in landing page yooooo');
     if (isLoading) {
        _loadUserInfo(context).whenComplete(() {
          isLoading = false;

@@ -10,14 +10,14 @@ class User {
     this.address,
   });
 
-  String firstName;
-  String lastName;
-  String phone;
-  String email;
-  String id;
-  String userRole;
-  DateTime birthDate;
-  Map address;
+  final String firstName;
+  final String lastName;
+  final String phone;
+  final String email;
+  final String id;
+  final String userRole;
+  final DateTime birthDate;
+  final Map address;
 
   factory User.fromMap(Map<dynamic, dynamic> value, String id) {
     return User(

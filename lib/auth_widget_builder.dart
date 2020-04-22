@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:implulsnew/services/firebase_auth_service.dart';
 // import 'package:implulsnew/services/firebase_storage_service.dart';
 import 'package:implulsnew/services/firestore_database_service.dart';
-// import 'package:implulsnew/services/google_places_service.dart';
-// import 'package:implulsnew/services/stripe_service.dart';
 // import 'package:implulsnew/utilities/constants.dart';
 import 'package:provider/provider.dart';
-//import 'package:onboarding/models/user.dart' as u;
-//import 'package:onboarding/models/user_info.dart';
+//import 'package:implulsnew/models/user.dart' as u;
+//import 'package:implulsnew/models/user_info.dart';
 
 /// Used to create user-dependent objects that need to be accessible by all widgets.
 /// This widget should live above the [MaterialApp].
@@ -18,7 +16,6 @@ class AuthWidgetBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('AuthWidgetBuilder rebuild');
     final authService = Provider.of<FirebaseAuthService>(context);
     return StreamBuilder<User>(
       stream: authService.onAuthStateChanged,
@@ -26,7 +23,6 @@ class AuthWidgetBuilder extends StatelessWidget {
         // User is signed in and retrieved here
         final User user = snapshot.data;
         if (user != null) {
-          print('i\'m in authwidgetbuilder uid: ${user.uid} and ${user.role}');
           return MultiProvider(
             providers: [
               Provider<User>.value(value: user),
@@ -35,12 +31,6 @@ class AuthWidgetBuilder extends StatelessWidget {
               ),
               // Provider<FirebaseStorageService>(
               //   create: (_) => FirebaseStorageService(uid: user.uid),
-              // ),
-              // Provider<StripeService>(
-              //   create: (_) => StripeService(uid: user.uid),
-              // ),
-              // Provider<GooglePlacesService>(
-              //   create: (_) => GooglePlacesService(apiKey: kApiKey),
               // ),
             ],
             child: builder(context, snapshot),

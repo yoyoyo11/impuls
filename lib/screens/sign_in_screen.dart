@@ -11,6 +11,8 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
+  TextStyle textFieldStyle =
+      TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
   String email;
   String password;
   bool showLoading = false;
@@ -19,6 +21,7 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Impuls'),
         automaticallyImplyLeading: false,
@@ -30,15 +33,25 @@ class _SignInScreenState extends State<SignInScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                Image(
+                    image: AssetImage(
+                  "assets/images/screen-shot-2020-03-14-at-102826-pm.png",
+                )),
+                SizedBox(
+                  height: 100.0,
+                ),
                 TextField(
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.emailAddress,
+                  style: textFieldStyle,
                   onChanged: (newEmail) {
-                    email = newEmail;
+                    email = newEmail.trim();
                   },
-                  // decoration: kTextFieldDecoration.copyWith(
-                  //     hintText: 'Enter Email'),
-                  decoration: InputDecoration(hintText: 'Enter Email'),
+                  decoration: InputDecoration(
+                    hintText: 'Enter Email',
+                    prefixIcon: Icon(Icons.email),
+                    border: OutlineInputBorder(),
+                  ),
                 ),
                 SizedBox(
                   height: 8.0,
@@ -46,26 +59,36 @@ class _SignInScreenState extends State<SignInScreen> {
                 TextField(
                   obscureText: true,
                   textAlign: TextAlign.center,
+                  style: textFieldStyle,
                   onChanged: (newPassword) {
                     password = newPassword;
                   },
-                  // decoration: kTextFieldDecoration.copyWith(
-                  //     hintText: 'Enter Password'),
-                  decoration: InputDecoration(hintText: 'Enter Password'),
+                  decoration: InputDecoration(
+                    hintText: 'Enter Password',
+                    prefixIcon: Icon(Icons.lock),
+                    border: OutlineInputBorder(),
+                  ),
                 ),
-                SizedBox(height: 8.0),
+                SizedBox(height: 15.0),
                 showLoading
                     ? CircularProgressIndicator()
                     : RaisedButton(
-                        child: Text('Sign In'),
+                        padding: EdgeInsets.only(
+                            left: 15.0, right: 15.0, top: 10.0, bottom: 10.0),
+                        child: Text(
+                          'Sign In',
+                          style: textFieldStyle.copyWith(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
                         color: Colors.blue,
                         onPressed: () async {
                           try {
                             setState(() {
                               showLoading = true;
                             });
-                            final auth =
-                                Provider.of<FirebaseAuthService>(context, listen: false);
+                            final auth = Provider.of<FirebaseAuthService>(
+                                context,
+                                listen: false);
                             await auth
                                 .signInWithEmailAndPassword(email, password)
                                 .whenComplete(() {});
@@ -81,7 +104,6 @@ class _SignInScreenState extends State<SignInScreen> {
                           }
                         },
                       ),
-                
               ],
             ),
           ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:implulsnew/bt/jens_page.dart';
+import 'package:implulsnew/screens/choose_patient_screen.dart';
 import 'package:implulsnew/screens/sign_in_screen.dart';
 import 'package:implulsnew/services/firebase_auth_service.dart';
 import 'package:implulsnew/widgets/platform_alert_dialog.dart';
@@ -16,6 +18,14 @@ class _ImpulsHomeScreenState extends State<ImpulsHomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("User Info"),
+        centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            // child: Text("Sign Out"),
+            icon: Icon(Icons.exit_to_app, color: Colors.white,),
+            onPressed: () => _confirmSignOut(context),
+          )
+        ],
       ),
       body: Center(
         child: Column(
@@ -25,28 +35,27 @@ class _ImpulsHomeScreenState extends State<ImpulsHomeScreen> {
             SizedBox(
               height: 15.0,
             ),
-            RaisedButton(
-              child: Text('Connect Device'),
-              onPressed: () async {
-                // _buildChooseJobBottomSheet(context, 'Instant Offer');
-              },
-            ),
+            customMaterialButton(
+                label: 'Connect Device',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => JensPage()),
+                  );
+                }),
             SizedBox(
               height: 15.0,
             ),
-            RaisedButton(
-              child: Text('Get Started'),
-              onPressed: () async {
-                // _buildChooseJobBottomSheet(context, 'Instant Offer');
-              },
-            ),
-            SizedBox(
-              height: 50.0,
-            ),
-            RaisedButton(
-              child: Text("Sign Out"),
-              onPressed: () => _confirmSignOut(context),
-            )
+            customMaterialButton(
+                label: 'Get Started',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ChoosePatientWidget(),
+                    ),
+                  );
+                }),
           ],
         ),
       ),
@@ -67,7 +76,7 @@ class _ImpulsHomeScreenState extends State<ImpulsHomeScreen> {
 
   Future<void> _signOut(BuildContext context) async {
     try {
-      final auth = Provider.of<FirebaseAuthService>(context);
+      final auth = Provider.of<FirebaseAuthService>(context, listen: false);
       await auth.signOut();
       Navigator.push(
         context,
@@ -78,5 +87,17 @@ class _ImpulsHomeScreenState extends State<ImpulsHomeScreen> {
     } catch (e) {
       print(e);
     }
+  }
+
+  MaterialButton customMaterialButton({String label, VoidCallback onPressed}) {
+    return MaterialButton(
+      color: Colors.blue,
+      minWidth: 150.0,
+      child: Text(
+        label,
+        style: TextStyle(color: Colors.white),
+      ),
+      onPressed: onPressed,
+    );
   }
 }
