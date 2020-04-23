@@ -3,6 +3,7 @@ class User {
     this.firstName,
     this.lastName,
     this.phone,
+    this.phone2,
     this.email,
     this.id,
     this.userRole,
@@ -13,6 +14,7 @@ class User {
   final String firstName;
   final String lastName;
   final String phone;
+  final String phone2;
   final String email;
   final String id;
   final String userRole;
@@ -24,6 +26,7 @@ class User {
       firstName: value['firstName'],
       lastName: value['lastName'],
       phone: value['phone'],
+      phone2: value['phone2'],
       email: value['email'],
       userRole: value['userRole'],
       birthDate: value['birthDate'],
@@ -31,23 +34,24 @@ class User {
     );
   }
 
-  fromMap(Map<dynamic, dynamic> value) {
-    return User(
-      firstName: value['firstName'],
-      lastName: value['lastName'],
-      phone: value['phone'],
-      email: value['email'],
-      userRole: value['userRole'],
-      birthDate: value['birthDate'],
-      address: value['address'],
-    );
-  }
+  // fromMap(Map<dynamic, dynamic> value) {
+  //   return User(
+  //     firstName: value['firstName'],
+  //     lastName: value['lastName'],
+  //     phone: value['phone'],
+  //     email: value['email'],
+  //     userRole: value['userRole'],
+  //     birthDate: value['birthDate'],
+  //     address: value['address'],
+  //   );
+  // }
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'firstName': firstName,
       'lastName': lastName,
       'phone': phone,
+      'phone2': phone2,
       'email': email,
       'userRole': userRole,
       'birthDate': birthDate,
@@ -66,6 +70,9 @@ class User {
     }
     if (user.phone != null) {
       data.addAll({'phone': user.phone});
+    }
+    if (user.phone2 != null) {
+      data.addAll({'phone2': user.phone2});
     }
     if (user.email != null) {
       data.addAll({'email': user.email});

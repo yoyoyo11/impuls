@@ -1,10 +1,28 @@
 class FirestorePath {
+  static String clinics() => 'clinics';
+  static String clinicById(String clinicId) => 'clinics/$clinicId';
+  static String therapists() => 'therapists';
+  static String therapistById(String therapistId) => 'therapists/$therapistId';
   static String patients() => 'patients';
-  static String sessions() => 'sessions';
+  static String patientById(String patientId) => 'patients/$patientId';
+  static String devices() => 'devices';
+  static String sessionDownloads() => 'sessionDownloads';
+  static String sessionUploads() => 'sessionUploads';
   
   
   
-  
+  // CLINICS -------------------------
+
+  // THERAPISTS ----------------------
+
+  // PATIENTS ------------------------
+
+  // DEVICES -------------------------
+
+  // SESSION DOWNLOADS ---------------
+
+  // SESSION UPLOADS -----------------
+
   
   static String businesses() => 'businesses'; 
   static String businessByUser(String uid) => 'users/$uid/business';

@@ -1,4 +1,4 @@
-#Wed Apr 22 14:14:38 PDT 2020
+#Thu Apr 23 16:12:22 PDT 2020
 base.2=/Users/elsie/Development/projects/impuls-app/build/app/intermediates/dex/debug/mergeExtDexDebug/out/classes2.dex
 base.1=/Users/elsie/Development/projects/impuls-app/build/app/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
 base.0=/Users/elsie/Development/projects/impuls-app/build/app/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex

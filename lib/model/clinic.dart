@@ -25,10 +25,10 @@ class Clinic {
     if (id == null) {
       return null;
     }
-    final Map address = value['address'];
-    if (address == null) {
-      return null;
-    }
+    // final Map address = value['address'];
+    // if (address == null) {
+    //   return null;
+    // }
     final String email = value['email'];
     if (email == null) {
       return null;

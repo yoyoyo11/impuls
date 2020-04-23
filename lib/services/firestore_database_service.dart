@@ -1,5 +1,8 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:implulsnew/model/clinic.dart';
+import 'package:implulsnew/model/patient.dart';
+import 'package:implulsnew/model/therapist.dart';
 import 'package:meta/meta.dart';
 // import 'package:implulsnew/models/job.dart';
 // import 'package:implulsnew/models/user.dart' as u;
@@ -22,14 +25,6 @@ class FirestoreDatabaseService {
         },
       );
 
-  // Future<void> updateUserInfo(u.User user, Map address) async {
-  //   print(address);
-  //   await updateData(
-  //     path: FirestorePath.user(uid),
-  //     data: user.toMapUpdate(user, address),
-  //   );
-  // }
-
   Future<String> getUserRole() async {
     String userRole;
     var userQuery = Firestore.instance.collection('users').document('$uid');
@@ -51,10 +46,80 @@ class FirestoreDatabaseService {
     return await getDocument(path: path);
   }
 
-  // Stream<UserInfo> userInfoStream() => documentStream(
-  //       path: FirestorePath.user(uid),
-  //       builder: (data, documentId) => UserInfo.fromMap(data),
-  //     );
+  // CLINICS -------------------------
+  Future<void> setClinic({Clinic clinic}) async {
+    await setDataAutoGenAndStoreId(
+      path: FirestorePath.clinics(),
+      data: clinic.toMap(),
+    );
+  }
+
+  Stream<List<Clinic>> clinicsStream() => collectionStream(
+        path: FirestorePath.clinics(),
+        builder: (data, documentId) => Clinic.fromMap(data, documentId),
+        sort: (lhs, rhs) => lhs.name.compareTo(rhs.name),
+      );
+
+  Future<void> deleteClinic(Clinic clinic) async {
+    // delete Clinic
+    await deleteData(path: FirestorePath.clinicById(clinic.id)).whenComplete(
+      () {
+        print('Successfully deleted ${clinic.name} with ID ${clinic.id}');
+      },
+    );
+  }
+
+  // THERAPISTS ----------------------
+  Future<void> setTherapist({Therapist therapist}) async {
+    await setDataAutoGenAndStoreId(
+      path: FirestorePath.therapists(),
+      data: therapist.toMap(),
+    );
+  }
+
+  Stream<List<Therapist>> therapistsStream() => collectionStream(
+        path: FirestorePath.therapists(),
+        builder: (data, documentId) => Therapist.fromMap(data, documentId),
+        sort: (lhs, rhs) => lhs.lastName.compareTo(rhs.lastName),
+      );
+
+  Future<void> deleteTherapist(Therapist therapist) async {
+    // delete Clinic
+    await deleteData(path: FirestorePath.therapistById(therapist.id)).whenComplete(
+      () {
+        print('Successfully deleted ${therapist.firstName} ${therapist.lastName} with ID ${therapist.id}');
+      },
+    );
+  }
+
+  // PATIENTS ------------------------
+   Future<void> setPatient({Patient patient}) async {
+    await setDataAutoGenAndStoreId(
+      path: FirestorePath.patients(),
+      data: patient.toMap(),
+    );
+  }
+
+  Stream<List<Patient>> patientsStream() => collectionStream(
+        path: FirestorePath.patients(),
+        builder: (data, documentId) => Patient.fromMap(data, documentId),
+        sort: (lhs, rhs) => lhs.lastName.compareTo(rhs.lastName),
+      );
+
+  Future<void> deletePatient(Patient patient) async {
+    // delete Clinic
+    await deleteData(path: FirestorePath.patientById(patient.id)).whenComplete(
+      () {
+        print('Successfully deleted ${patient.firstName} ${patient.lastName} with ID ${patient.id}');
+      },
+    );
+  }
+
+  // DEVICES -------------------------
+
+  // SESSION DOWNLOADS ---------------
+
+  // SESSION UPLOADS -----------------
 
   // // JOBS -------------------------
   // Future<String> setJobByUserAndBusiness({Job job, String businessId}) async {
